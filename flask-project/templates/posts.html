@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}GitHub post{% endblock %}
+{% block content %}
+<h1 class="apos">All posts on  site</h1>
+<div class="el_view">
+    {% if posts|length > 0 %}
+        {% for el in posts %}
+        <h1 class="space"></h1>
+         <div class="elements">
+            <h2 class="ttl">{{ el.title }}</h2>
+            <p class="intro">{{ el.intro }}</p>
+            <p class="dt">Date: {{ el.date.date() }}</p>
+            <a class="view-btn" href="/posts/{{ el.id }}">more...</a>
+         </div>
+         <h1 class="space"></h1>
+        {% endfor %}
+    {% else %}
+    <p>Posts not found</p>
+    {% endif %}
+</div>
+{% endblock %}

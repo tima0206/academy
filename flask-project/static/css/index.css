@@ -1,0 +1,105 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  background-image: url(/static/images/sp1.jpg);
+  background-color: #2e2d2d;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #252525;
+  padding: 20px 10px;
+}
+
+.wrap-logo {
+  display: flex;
+  align-items: center;
+  background-color: #707070;
+ 
+}
+
+.glogo {
+    width: 100px;
+    height: 70px;
+}
+
+header a {
+  color: #212121;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 4px;
+  padding: 12px;
+  
+}
+
+h1.apos {
+  font-size: 35px; 
+  text-align: center;
+  background-color: #252525;
+  color: #2afc00;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header a:hover {
+  background-color: #141414;
+  color: #2afc00;
+}
+
+header a.active {
+  background-color: #707070;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  }
+
+.el_view {
+  background-color: #2423236e;
+}
+
+h1.space {
+  color:#2afc0000;
+  border:  4px double black;
+  background-color: #2afc0000;
+}
+
+.view-btn {
+  color: #2afc00;
+}
+
+.elements {
+  margin: 25px
+}
+
+.posts_all {
+  color: #212121;
+  padding: 32px;
+  font-size: 18px; 
+  border-radius: 8px;
+}
+
+div p.intro {
+  padding: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div h2.ttl {
+  padding: auto;
+  font-family: Arial, Helvetica, sans-serif;
+} 
+
+div p.dt {
+  padding: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}

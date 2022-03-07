@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}GitHub users{% endblock %}
+{% block content %}
+    <div>
+        {% for el in users %}
+        <div class="elements">
+            <h2>{{ el.nickname }}</h2>
+            <p>Date: {{ el.date.date() }}</p>
+            <a href="/posts/{{ el.id }}">more...</a>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

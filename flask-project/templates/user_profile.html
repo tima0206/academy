@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}{{ user.nickname }}{% endblock %}
+{% block content %}
+    <div>
+        <div class="container">
+            <h1>{{ user.name }}</h1>
+            <p>{{ user.nickname }}</p>
+            <p> Register date: {{ user.date.date() }}</p>
+        </div>
+    </div>
+{% endblock %}
